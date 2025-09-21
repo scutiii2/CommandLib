@@ -1,5 +1,5 @@
 #pragma once
-#include "../core/Command.h"
+#include "../Command.h"
 #include <Arduino.h>
 #include <iostream>
 
@@ -34,8 +34,10 @@ public:
         for (int i = 0; i < times; i++)
         {
             if (ctx.flags.count("verbose"))
+            {
                 Serial.print("Blink ");
-            Serial.println(i + 1);
+                Serial.println(i + 1);
+            }
             digitalWrite(pin_, HIGH);
             delay(delayMs);
             digitalWrite(pin_, LOW);

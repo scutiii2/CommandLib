@@ -1,5 +1,5 @@
 #include "CommandController.h"
-#include "../commands/HelpCommand.h"
+#include "commands/HelpCommand.h"
 #include <algorithm>
 #include <sstream>
 #include <iostream>
@@ -7,7 +7,7 @@
 std::string CommandController::toLower(const std::string &s)
 {
     std::string out = s;
-    std::transform(out.begin(), s.end(), out.begin(), ::tolower);
+    std::transform(s.begin(), s.end(), out.begin(), ::tolower);
     return out;
 }
 

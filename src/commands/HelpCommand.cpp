@@ -1,5 +1,5 @@
 #include "HelpCommand.h"
-#include "../core/CommandController.h"
+#include "../CommandController.h"
 #include <iostream>
 
 HelpCommand::HelpCommand(CommandController *ctrl) : controller(ctrl) {}

@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "core/CommandController.h"
+#include <CommandController.h>
 #include "commands/BlinkCommand.h"
 
 CommandController controller;

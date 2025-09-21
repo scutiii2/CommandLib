@@ -1,5 +1,5 @@
 #pragma once
-#include "../core/Command.h"
+#include "../Command.h"
 
 class CommandController;
 
